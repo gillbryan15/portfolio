@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #0066cc;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  color: #777;
+  font-size: 0.9em;
+}
