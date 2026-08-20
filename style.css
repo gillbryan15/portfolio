@@ -14,11 +14,12 @@ header {
 }
 
 h1 {
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 section {
   margin-bottom: 30px;
+
 }
 
 a {
@@ -30,4 +31,30 @@ footer {
   padding-top: 15px;
   color: #777;
   font-size: 0.9em;
+}
+
+.links-list {
+  border: 1px;
+  color: red;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.bordered {
+  border: 1px solid grey;
+  padding: 15px;
+}
+.bordered-heading {
+  display: inline-block;
+  border: 1px solid grey;
+  padding: 5px 10px;
 }
