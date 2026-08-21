@@ -5,9 +5,27 @@ button.addEventListener("click", function() {
   greetingText.textContent = "Hello, Gill! JavaScript just changed this text.";
 });
 
-const button2 = document.getElementById("useless-btn");
-const uselessText = document.getElementById("useless");
+const input = document.getElementById("new-skill-input");
+const addButton = document.getElementById("add-skill-button");
+const skillList = document.querySelector(".skill-list")
 
-button2.addEventListener("click", function() {
-    uselessText.textContent = "Congratulations! You clicked a useless button!"
+addButton.addEventListener("click", function() {
+  const newSkill = input.value;
+
+  if (newSkill === "") {
+    return; 
+  }
+
+  const newItem = document.createElement("li");
+  newItem.textContent = newSkill;
+  skillList.appendChild(newItem);
+
+  input.value = "";
+
+});
+
+input.addEventListener("keydown", function (event) {
+  if (event.key === "Enter"){
+    addButton.click();
+  }
 });
