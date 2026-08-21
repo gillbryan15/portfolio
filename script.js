@@ -29,3 +29,24 @@ input.addEventListener("keydown", function (event) {
     addButton.click();
   }
 });
+
+const removeInput = document.getElementById("skill-remove-input");
+const removeButton = document.getElementById("removeButton");
+
+removeButton.addEventListener("click", function() {
+  const skillToRemove = removeInput.value;
+
+  if (skillToRemove === ""){
+    return;
+  }
+
+  const allSkills = skillList.querySelectorAll("li");
+
+  allSkills.forEach(function (skillItem){
+    if (skillItem.textContent === skillToRemove){
+      skillItem.remove();
+    }
+  });
+
+ removeInput.value = "";
+});
