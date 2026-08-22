@@ -39,25 +39,21 @@ input.addEventListener("keydown", function (event) {
 
 const removeInput = document.getElementById("skill-remove-input");
 const removeButton = document.getElementById("removeButton");
-const removeLevel = document.getElementById("level-to-remove");
+
 
 removeButton.addEventListener("click", function() {
   const skillToRemove = removeInput.value 
-  const skillLevelToRemove = removeLevel.value
+  
 
   if (skillToRemove === ""){
     return;
   }
 
-  const removeSkillObject = {
-    name: skillToRemove,
-    level: skillLevelToRemove
-  };
-
+ 
   const allSkills = skillList.querySelectorAll("li");
 
   allSkills.forEach(function (skillItem){
-    if (skillItem.textContent === removeSkillObject.name + " (" + removeSkillObject.level + ")"){
+    if (skillItem.textContent.startsWith(skillToRemove)){
       skillItem.remove(); 
     }
   });
