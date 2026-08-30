@@ -61,9 +61,11 @@ footer {
 }
 
 .bordered {
-  border: 1px solid grey;
-  padding: 15px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
 }
+
 .bordered-heading {
   display: inline-block;
   border: 1px solid grey;
@@ -77,6 +79,10 @@ footer {
 .project-card {
   text-align: left;
   margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card h3 {
@@ -85,7 +91,18 @@ footer {
 
 .project-card a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 10px;
   margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #f0f4f8;
+  border-radius: 4px;
   font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  background-color: #dbe7f3;
 }
