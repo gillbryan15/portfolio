@@ -1,10 +1,3 @@
-const button = document.getElementById("greet-btn");
-const greetingText = document.getElementById("greeting");
-
-button.addEventListener("click", function() {
-  greetingText.textContent = "Hello, Gill! JavaScript just changed this text.";
-});
-
 const input = document.getElementById("new-skill-input");
 const addButton = document.getElementById("add-skill-button");
 const skillList = document.querySelector(".skill-list")

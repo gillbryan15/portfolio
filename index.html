@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gill Bryan Royd Geoffrey Boyd — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!--connects to the css-->
 </head>
 <body>
   <header>
@@ -13,22 +13,29 @@
   </header>
 
   <main>
-    <section class = "centered">
+    <section class = "centered"> <!-- Created a centered class from CSS so stuff looks for centered for this section-->
       <h2 class = "bordered-heading">About Me</h2>
       <p>My name is Gill Bryan Royd Geoffrey Boyd, I am currently taking a degree in Software Engineering and studying at University Malaysia Sabah (UMS). I am interested in building software and applications that solves real problems that i have faced. Currently this is my first step into learning how to build my very own website/software/app</p>
     </section>
 
-    <section class = "bordered">
+    <section class = "bordered"> <!-- created a bordered class so that this section has borders -->
       <h2 class = "centered">Links</h2>
-      <ul class = "links-list">
+      <ul class = "links-list"> <!-- This has a specific design for it's class, uses flex which lines the links in one row -->
         <li><a href="https://github.com/gillbryan15" target="_blank">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/gill-bryan-b6a099336/" target="_blank">LinkedIn</a></li>
         <li><a href="mailto:gillbryan15@gmail.com">Email me</a></li>
       </ul>
     </section>
 
-    <button id="greet-btn">Click Me</button>
-<p id="greeting"></p>
+    <section class="bordered">
+  <h2 class="centered">Projects</h2>
+  <div class="project-card">
+    <h3>My Reading Shelf</h3>
+    <p>A visual reading tracker built with vanilla HTML, CSS, and JavaScript. Add books to a virtual shelf, track reading progress, mark books as done, and maintain a daily reading streak — all persisted with localStorage.</p>
+    <a href="https://gillbryan15.github.io/Digital-Shelf/" target="_blank">View Live Site</a>
+    <a href="https://github.com/gillbryan15/Digital-Shelf" target="_blank">View Code</a>
+  </div>
+</section>
 
     <section class = "bordered"> 
       <h2 class = "centered"> Skills</h2>
@@ -42,9 +49,9 @@
        
       </ul>
     </section>
-     <div class = "skill-adder">
+     <div class = "skill-adder"><!--div is like a meaningless empty container unlike head or sumn like that-->
       <input type = "text" id = "new-skill-input" placeholder="Try adding a skill here..">
-      <select id = "new-skill-level"> 
+      <select id = "new-skill-level"> <!--My first select-->
         <option value = "Beginner">Beginner</option>
         <option value = "Intermediate">Intermediate</option>
         <option value = "Advanced">Advanced</option>
@@ -61,6 +68,6 @@
   <footer>
     <p>&copy; 2026 Gill Bryan Royd Geoffrey Boyd</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!--connects to the js-->
 </body>
 </html>
